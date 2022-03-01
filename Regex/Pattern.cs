@@ -5,7 +5,7 @@ namespace validation
 {
     public class Pattern
     {
-        public static string pswd = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$";
+        public static string pswd = "^(?=.*[a-z])(?=.*[A-Z])(?=.*)[a-zA-Z]{8,}$";
         public bool Validate(string password)
         {
             return Regex.IsMatch(password,pswd);
