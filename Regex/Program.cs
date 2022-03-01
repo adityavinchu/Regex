@@ -11,7 +11,7 @@ namespace validation
         static void Main(string[] args)
         {
             Pattern pattern = new Pattern();
-            bool flag = pattern.Validate("Aditya");
+            bool flag = pattern.Validate("asd7x");
             Console.WriteLine(flag);
             Console.ReadLine();
         }
