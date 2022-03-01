@@ -5,10 +5,10 @@ namespace validation
 {
     public class Pattern
     {
-        public static string mobNumber = "^[0-9]{2}[ ]{1}[6-9]{1}[0-9]{9}$";
-        public bool Validate(string mobileNumber)
+        public static string pswd = "^[a-zA-Z0-9]{8,}$";
+        public bool Validate(string password)
         {
-            return Regex.IsMatch(mobileNumber,mobNumber);
+            return Regex.IsMatch(password,pswd);
         }
     }
 }
