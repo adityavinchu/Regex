@@ -11,7 +11,10 @@ namespace validation
         static void Main(string[] args)
         {
             Pattern pattern = new Pattern();
-            bool flag = pattern.Validate("asd7x");
+            Console.WriteLine("Enter email: ");
+            string str=Console.ReadLine();
+
+            bool flag = pattern.Validate(str);
             Console.WriteLine(flag);
             Console.ReadLine();
         }
