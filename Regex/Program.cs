@@ -11,7 +11,7 @@ namespace validation
         static void Main(string[] args)
         {
             Pattern pattern = new Pattern();
-            Console.WriteLine("Enter Password: ");
+            Console.WriteLine("Enter Password : ");
             string str=Console.ReadLine();
 
             bool flag = pattern.Validate(str);
