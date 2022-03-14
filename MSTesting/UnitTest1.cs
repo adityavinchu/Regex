@@ -6,13 +6,13 @@ namespace MSTesting
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void GivenCorrectPassword_ShouldReturnValidPassword()
         {
             Pattern password = new Pattern();
-            Assert.IsTrue(password.Validate("Asjsl@457"));
+            Assert.IsTrue(password.Validate("Asdf@457"));
         }
         [TestMethod]
-        public void TestMethod2()
+        public void GivenWrongPassword_ShouldReturnInvalidPassword()
         {
             Pattern password = new Pattern();
             Assert.IsTrue(password.Validate("457844"));
